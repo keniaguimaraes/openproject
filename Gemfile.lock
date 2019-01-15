@@ -521,7 +521,6 @@ GEM
     mustermann (1.0.2)
     mustermann-grape (1.0.0)
       mustermann (~> 1.0.0)
-    mysql2 (0.5.1)
     net-ldap (0.16.0)
     netrc (0.11.0)
     newrelic_rpm (4.5.0.337)
@@ -889,7 +888,6 @@ DEPENDENCIES
   livingstyleguide (~> 2.0.1)
   meta-tags (~> 2.6.0)
   multi_json (~> 1.12.1)
-  mysql2 (~> 0.5.0)
   net-ldap (~> 0.16.0)
   newrelic_rpm
   nokogiri (~> 1.8.5)
@@ -970,7 +968,6 @@ DEPENDENCIES
   spring
   spring-commands-rspec
   sprockets (~> 3.7.0)
-  sqlite3
   stackprof
   stringex (~> 2.7.1)
   svg-graph (~> 2.1.0)
