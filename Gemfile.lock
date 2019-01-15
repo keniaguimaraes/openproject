@@ -985,5 +985,3 @@ DEPENDENCIES
   webmock (~> 3.1.0)
   will_paginate (~> 3.1.0)
 
-BUNDLED WITH
-   2.0.1
