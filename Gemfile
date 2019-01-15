@@ -28,7 +28,6 @@
 
 source 'https://rubygems.org'
 
-ruby '~> 2.5.1'
 
 gem 'actionpack-xml_parser', '~> 2.0.0'
 gem 'activemodel-serializers-xml', '~> 1.0.1'
@@ -36,7 +35,7 @@ gem 'activerecord-session_store', '~> 1.1.0'
 gem 'rails', '~> 5.2.2'
 gem 'responders', '~> 2.4'
 gem "listen", "~> 3.1" # Use for event-based reloaders
-
+gem "sqlite3"        
 gem 'rubytree', git: 'https://github.com/dr0verride/RubyTree.git', ref: '06f53ee'
 gem 'rdoc', '>= 2.4.2'
 
@@ -222,7 +221,7 @@ group :test do
   gem 'capybara-select2', git: 'https://github.com/goodwill/capybara-select2', ref: '585192e'
   gem 'chromedriver-helper', '~> 2.1.0'
   gem 'selenium-webdriver', '~> 3.14'
-
+  gem 'rails_12factor', group: :production
   gem 'fuubar', '~> 2.3.2'
   gem 'timecop', '~> 0.9.0'
   gem 'webmock', '~> 3.1.0', require: false
@@ -293,8 +292,8 @@ group :docker, optional: true do
   gem 'passenger', '~> 5.3.3'
 
   # Used to easily precompile assets
-  gem 'sqlite3', require: false
-  gem 'rails_12factor', require: !!ENV['HEROKU']
+ 
+
   gem 'health_check', require: !!ENV['HEROKU']
   gem 'newrelic_rpm', require: !!ENV['HEROKU']
 end
