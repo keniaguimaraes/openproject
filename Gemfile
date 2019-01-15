@@ -35,7 +35,7 @@ gem 'activerecord-session_store', '~> 1.1.0'
 gem 'rails', '~> 5.2.2'
 gem 'responders', '~> 2.4'
 gem "listen", "~> 3.1" # Use for event-based reloaders
-gem "sqlite3"        
+      
 gem 'rubytree', git: 'https://github.com/dr0verride/RubyTree.git', ref: '06f53ee'
 gem 'rdoc', '>= 2.4.2'
 
