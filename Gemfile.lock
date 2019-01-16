@@ -279,6 +279,10 @@ GEM
       aws-sdk-core (~> 3)
       aws-sigv4 (~> 1.0)
     aws-sigv4 (1.0.2)
+    axiom-types (0.1.1)
+      descendants_tracker (~> 0.0.4)
+      ice_nine (~> 0.11.0)
+      thread_safe (~> 0.3, >= 0.3.1)
     backports (3.11.3)
     bcrypt (3.1.11)
     bindata (2.4.4)
@@ -323,6 +327,8 @@ GEM
       archive-zip (~> 0.10)
       nokogiri (~> 1.8)
     coderay (1.1.2)
+    coercible (1.0.0)
+      descendants_tracker (~> 0.0.1)
     commonmarker (0.17.9)
       ruby-enum (~> 0.5)
     concurrent-ruby (1.1.4)
@@ -369,6 +375,8 @@ GEM
     delayed_job_active_record (4.1.3)
       activerecord (>= 3.0, < 5.3)
       delayed_job (>= 3.0, < 5)
+    descendants_tracker (0.0.4)
+      thread_safe (~> 0.3, >= 0.3.1)
     diff-lcs (1.3)
     disposable (0.4.2)
       declarative (>= 0.0.9, < 1.0.0)
@@ -379,6 +387,7 @@ GEM
     docile (1.3.0)
     domain_name (0.5.20180417)
       unf (>= 0.0.5, < 1.0.0)
+    equalizer (0.0.11)
     equivalent-xml (0.6.0)
       nokogiri (>= 1.4.3)
     erbse (0.0.2)
@@ -426,10 +435,13 @@ GEM
       actionpack (>= 3.0)
       multi_json
       request_store (>= 1.0)
-    grape (1.1.0)
+    grape (1.2.2)
       activesupport
       builder
       mustermann-grape (~> 1.0.0)
+      rack (>= 1.3.0)
+      rack-accept
+      virtus (>= 1.0.0)
     gravatar_image_tag (1.2.0)
     hashdiff (0.3.7)
     hashery (2.1.2)
@@ -443,11 +455,12 @@ GEM
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     httpclient (2.8.3)
-    i18n (1.5.1)
+    i18n (1.5.2)
       concurrent-ruby (~> 1.0)
     i18n-js (3.0.5)
       i18n (>= 0.6.6, < 2)
     icalendar (2.3.0)
+    ice_nine (0.11.2)
     interception (0.5)
     io-like (0.3.0)
     ipaddress (0.8.3)
@@ -505,7 +518,7 @@ GEM
     msgpack (1.1.0)
     multi_json (1.12.2)
     multi_test (0.1.2)
-    mustermann (1.0.2)
+    mustermann (1.0.3)
     mustermann-grape (1.0.0)
       mustermann (~> 1.0.0)
     net-ldap (0.16.0)
@@ -581,6 +594,8 @@ GEM
     rabl (0.13.1)
       activesupport (>= 2.3.14)
     rack (2.0.6)
+    rack-accept (0.4.5)
+      rack (>= 0.4)
     rack-attack (5.2.0)
       rack
     rack-mini-profiler (1.0.0)
@@ -794,6 +809,11 @@ GEM
     validate_url (1.0.2)
       activemodel (>= 3.0.0)
       addressable
+    virtus (1.0.5)
+      axiom-types (~> 0.1)
+      coercible (~> 1.0)
+      descendants_tracker (~> 0.0, >= 0.0.3)
+      equalizer (~> 0.0, >= 0.0.9)
     warden (1.2.7)
       rack (>= 1.0)
     warden-basic_auth (0.2.1)
@@ -966,4 +986,4 @@ DEPENDENCIES
   will_paginate (~> 3.1.0)
 
 BUNDLED WITH
-   2.0.1
+   2.0.0.pre.1
